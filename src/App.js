@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import {Box, Grid} from '@mui/material'
 import './App.css';
+import Footer from './footer/Footer';
+// import Home from './component/Home';
+import Homepage from './component/Homepage';
+import Home from './component/Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box sx={{width:'1920px',bgcolor:'#fff7ea'}}>
+      <Grid xs={12} container direction='row' sx={{bgcolor:'#fff7ea'}}>
+        <Grid xs={3}>
+            <Home/>
+        </Grid>
+        <Grid xs={9}>
+            <Homepage/>
+        </Grid>
+        
+        
+      </Grid>
+      <Footer />
+    </Box>
   );
 }
 
