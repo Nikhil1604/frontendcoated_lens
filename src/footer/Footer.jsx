@@ -3,22 +3,22 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <Box sx={{width:'1920px'}}>
-        <Grid xs={12} container p={10} sx={{bgcolor:'#000',color:'#fff'}}>
-            <Grid xs={10} container direction='column' justifyContent='center' alignItems='flex-start' paddingTop='246px' paddingLeft='566px'>
-                <Typography>NewsLetter</Typography>
+    <Box>
+        <Grid container direction='row' justifyContent='center' alignItems='center' height='350px' sx={{bgcolor:'#000',color:'#fff'}}>
+            <Grid xs={8} container direction='column' justifyContent='center' paddingLeft='250px' alignItems='flex-start'>
+                <Typography fontSize='30px' paddingBottom='20px'>NewsLetter</Typography>
                 <Grid>
-                <TextField variant='outlined'  placeholder='Email' size='small' sx={{bgcolor:'#fff', color:'#000'}} />
-                <Button variant='outlined'  sx={{marginLeft:'15px',color:'#000',bgcolor:"#fff", border:"1px solid #fff",borderRadius:''}}>Subscibe</Button>
+                <TextField variant='outlined'  placeholder='Email' size='small' borderRadius='5'  sx={{bgcolor:'#fff', color:'#000'}} />
+                <Button variant='outlined'  sx={{marginLeft:'15px',color:'#000',bgcolor:"#fff", border:"1px solid #fff",borderRadius:'5'}}>Subscibe</Button>
                 </Grid>
-                <Typography>Sign up with your email address to receive news and updates</Typography>
+                <Typography fontSize='20px' paddingTop='30px' fontWeight='200'>Sign up with your email address to receive news and updates</Typography>
 
             </Grid>
-            <Grid xs={2} container direction="column" justifyItems='center' alignItems='center' paddingTop='173px'>
-                <Typography>Contact Us</Typography>
-                <Typography>AnyWhere,AnyCity,445533</Typography>
-                <Typography>Call Us:+5555555555</Typography>
-                <Typography>info@kingserent.com</Typography>
+            <Grid xs={4} container direction="column" justifyItems='center' alignItems='center'>
+                <Typography fontSize='24px'>Contact Us</Typography>
+                <Typography fontSize='20px'>AnyWhere, AnyCity, 445533</Typography>
+                <Typography fontSize='20px'>Call Us: +5555555555</Typography>
+                <Typography fontSize='20px'>info@kingserent.com</Typography>
             </Grid>
         </Grid>
     </Box>
