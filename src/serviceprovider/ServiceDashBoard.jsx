@@ -2,10 +2,11 @@ import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 import image1 from '../images/servicedash1.jpg'
 import image2 from '../images/servicedash2.jpg'
+import Lead from './Lead'
 // import photo from '../images/leadsphoto.jpg'
-import Leads from './Leads'
 
-const ServiceProviDashboard = () => {
+
+const ServiceDashBoard = () => {
   return (
     <Box height='100%' sx={{backgroundColor:'white'}}>
         <Grid container direction='column'>
@@ -23,9 +24,9 @@ const ServiceProviDashboard = () => {
                     New Leads
                 </Typography>
                 <Grid container direction='row' paddingY='10px' paddingLeft='40px'>
-                    <Leads />
-                    <Leads />
-                    <Leads />
+                    <Lead />
+                    <Lead />
+                    <Lead />
                 </Grid>
 
 
@@ -37,9 +38,9 @@ const ServiceProviDashboard = () => {
                 </Typography>
                 
                 <Grid container direction='row' paddingY='10px' paddingLeft='40px'>
-                    <Leads />
-                    <Leads />
-                    <Leads />
+                    <Lead />
+                    <Lead />
+                    <Lead />
                 </Grid>
 
 
@@ -52,4 +53,4 @@ const ServiceProviDashboard = () => {
   )
 }
 
-export default ServiceProviDashboard
+export default ServiceDashBoard

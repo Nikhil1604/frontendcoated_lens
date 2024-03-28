@@ -15,11 +15,17 @@ const SideBar = () => {
     <Box  sx={{}}>
         <Grid container direction='column' alignItems='center'>
             <img src={companylogo}  alt="Company Logo" style={{padding:'43px 0 75px 0',backgroundColor:'#fff7ea'}} />
-            <Button component={Link} to='/' sx={{fontSize:'20px',color:'#a2783a',paddingBottom:'23px'}}>Home</Button>
-            <Button component={Link} to='/about' sx={{ fontSize:'20px',color:'#a2783a',paddingBottom:'23px'}}>About</Button>
-            <Button component={Link} to='/contact' sx={{ fontSize:'20px',color:'#a2783a',paddingBottom:'36px'}}>Contact</Button>
-            <Button component={Link} to='/login' sx={{fontSize:'20px',color:'#a2783a'}}>Log In</Button>
-            <Button component={Link} to='/signup' sx={{fontSize:'20px',color:'#a2783a',padding:'25px 0 0 0'}}>Sign Up</Button>
+            <Button component={Link} to='/' variant='text' sx={{fontSize:'20px',color:'#a2783a',paddingBottom:'23px',boxShadow:'none',transition: 'transform 0.3s ease-in-out',
+            '&:hover':{scale:'1.1',boxShadow:'none' }
+            }}>Home</Button>
+            <Button component={Link} to='/about' variant='text' sx={{ fontSize:'20px',color:'#a2783a',paddingBottom:'23px',transition: 'transform 0.3s ease-in-out',
+            '&:hover':{scale:'1.1'}}}>About</Button>
+            <Button component={Link} to='/contact' variant='text' sx={{ fontSize:'20px',color:'#a2783a',paddingBottom:'36px',transition: 'transform 0.3s ease-in-out',
+            '&:hover':{scale:'1.1'}}}>Contact</Button>
+            <Button component={Link} to='/login' variant='text' sx={{fontSize:'20px',color:'#a2783a',transition: 'transform 0.3s ease-in-out',
+            '&:hover':{scale:'1.1'}}}>Log In</Button>
+            <Button component={Link} to='/signup' variant='text' sx={{fontSize:'20px',color:'#a2783a',padding:'25px 0 0 0',transition: 'transform 0.3s ease-in-out',
+            '&:hover':{scale:'1.1'}}}>Sign Up</Button>
             <img src={googleplay} style={{paddingTop:'48px'}} alt="google play" />
             <img src={applestore} style={{paddingTop:'25px'}} alt="apple store" />
             <hr  style={{ marginTop:'35px',width:'33%',color:'a2783a'}}/>

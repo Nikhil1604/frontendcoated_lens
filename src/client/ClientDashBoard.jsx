@@ -8,7 +8,7 @@ import design from '../images/design.jpg'
 import { Link } from 'react-router-dom'
 
 
-const UserDashboard = () => {
+const ClientDashBoard = () => {
   return (
     <Box height='100%' sx={{backgroundColor:'white'}}>
         <Grid container direction='column'  >
@@ -23,19 +23,34 @@ const UserDashboard = () => {
             <Grid container direction='row' justifyContent='space-around' alignItems='center' paddingTop='74px'>
                         <Grid xs={3} container direction='column' justifyContent='center' alignItems='center'>
                             <img src={photo} alt='photo1'/>
-                            <Button component={Link} to='/choosephoto' variant='text' sx={{fontSize:'20px', color:'black',paddingTop:'28px'}}>PhotoGraphy</Button>
+                            <Button component={Link} to='/choosephoto' 
+                            variant='text' 
+                            sx={{fontSize:'20px', color:'black', marginTop:'18px',padding:'10px',
+                            border:'0px',
+                            transform:'transition 0.3s ease-in-out',
+                            '&:hover':{scale:'1.1'}
+                            }}>PhotoGraphy</Button>
                         </Grid>
                         <Grid xs={3} container direction='column' justifyContent='center' alignItems='center'>
                             <img src={video} alt='video'/>
-                            <Button component={Link} to='/choosephoto' variant='text' sx={{fontSize:'20px',color:'black',paddingTop:'28px'}}>VideoGraphy</Button>
+                            <Button component={Link} to='/choosephoto' variant='text' sx={{fontSize:'20px',color:'black', marginTop:'18px',padding:'10px',
+                            transform:'transition 0.3s ease-in-out',
+                            '&:hover':{scale:'1.1',border:'0px'}
+                            }}>VideoGraphy</Button>
                         </Grid>
                         <Grid xs={3} container direction='column' justifyContent='center' alignItems='center'>
                             <img src={design} alt='design'/>
-                            <Button component={Link} to='/choosephoto' variant='text' sx={{fontSize:'20px',color:'black',paddingTop:'28px'}}>Designing</Button>
+                            <Button component={Link} to='/choosephoto' variant='text' sx={{fontSize:'20px',color:'black', marginTop:'18px', padding:'10px',border:'0px',
+                            transform:'transition 0.3s ease-in-out',
+                            '&:hover':{scale:'1.1'}
+                            }}>Designing</Button>
                         </Grid>
                         <Grid xs={3} container direction='column' justifyContent='center' alignItems='center'>
                             <img src={edit} alt='edit'/>
-                            <Button component={Link} to='/choosephoto' variant='text' sx={{fontSize:'20px',color:'black',paddingTop:'28px'}}>Editing</Button>
+                            <Button component={Link} to='/choosephoto' variant='text' sx={{fontSize:'20px',color:'black', marginTop:'18px',padding:'10px',border:'0px',
+                            transform:'transition 0.3s ease-in-out',
+                            '&:hover':{scale:'1.1'}
+                        }}>Editing</Button>
                         </Grid>
                 </Grid>
 
@@ -44,4 +59,4 @@ const UserDashboard = () => {
   )
 }
 
-export default UserDashboard
+export default ClientDashBoard

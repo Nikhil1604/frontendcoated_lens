@@ -22,12 +22,17 @@ const About = () => {
                         <Grid xs={6} container direction='column' justifyContent='center' alignItems='center'>
                             <img src={earn} alt='earn'/>
                             <Typography variant='body1' fontSize='30px' paddingTop='40px' paddingBottom='45px' fontWeight='400'>Earn With Us</Typography>
-                            <Button component={Link} to='/earnwithus' variant='contained' sx={{bgcolor:'#000',color:'#fff',width:'251px',height:'71px',paddingTop:'15px', fontSize:'23px'}}>View Details</Button>
+                            <Button component={Link} to='/earnwithus' variant='contained' sx={{bgcolor:'#000',color:'#fff',
+                            width:'251px',height:'71px',paddingTop:'15px',transform:'transition 0.3s ease-in-out',
+                             fontSize:'23px','&:hover':{bgcolor:'#000',color:'#fff',scale:'1.05'}}}>View Details</Button>
                         </Grid>
                         <Grid xs={6} container direction='column' justifyContent='center' alignItems='center'>
                             <img src={book} alt='book'/>
                             <Typography variant='body1' fontSize='30px' paddingTop='40px'  paddingBottom='45px' fontWeight='400'>Book A service</Typography>
-                            <Button component={Link} to='/bookaservice' variant='contained' sx={{bgcolor:'#000',color:'#fff',width:'251px',height:'71px',paddingTop:'15px', fontSize:'23px'}}>View Details</Button>
+                            <Button component={Link} to='/bookaservice' variant='contained' sx={{bgcolor:'#000',color:'#fff',
+                            width:'251px',height:'71px',paddingTop:'15px', 
+                            transform:'transition 0.3s ease-in-out',
+                            fontSize:'23px','&:hover':{bgcolor:'#000',color:'#fff',scale:'1.05'}}}>View Details</Button>
                         </Grid>
                           
                     </Grid>

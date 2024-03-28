@@ -37,10 +37,10 @@ const Contact = () => {
                     <TextField xs={5} variant='outlined' label='Email' sx={{backgroundColor:'#fff7ea',border:'1px solid #926c34',borderRadius:'5px'}} />
                 </Grid>
                 <TextField variant='outlined' sx={{marginY:'10px',backgroundColor:'#fff7ea',border:'1px solid #926c34',borderRadius:'5px'}} label='Subject' />
-                <TextField variant='outlined' label='Message' sx={{backgroundColor:'#fff7ea',border:'1px solid #926c34',borderRadius:'5px'}} />
-                <Button variant='contained'  sx={{bgcolor:'#000',color:'#fff', width:'30%', marginY:'20px'}}>Send</Button>
+                <TextField variant='outlined' label='Message' multiline rows={6} sx={{backgroundColor:'#fff7ea',border:'1px solid #926c34',borderRadius:'5px'}} />
+                <Button variant='contained'  sx={{bgcolor:'#000',color:'#fff', width:'30%',fontSize:'20px', marginY:'20px',transform:'transition 0.3s ease-in-out','&:hover':{bgcolor:'#000',color:'#fff',scale:'1.05'}}}>Send</Button>
             </Grid>
-        </Grid>
+        </Grid> 
 
 
     </Box>

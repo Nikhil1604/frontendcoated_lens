@@ -1,16 +1,16 @@
+import { Textarea } from '@mui/joy'
 import { Box, Button, Grid, MenuItem, Select, Typography } from '@mui/material'
 import React from 'react'
 import uplo from '../images/upload.jpg'
-import {Textarea } from '@mui/joy'
+import { Link } from 'react-router-dom'
 
 const gender =['Male','Female','Other']
 
 const services=['Photography','VideoGraphy','Designing','Editing',]
 
-const subcat=['option1','option2','option3']
 
 
-const AboutUs = () => {
+const AboutUsUser = () => {
     const [value,setValue]=React.useState('');
 
     const handleChange = (e) =>{
@@ -67,23 +67,15 @@ const AboutUs = () => {
                     <Textarea paddingY='10px' paddingLeft='10px'  placeholder='Date Of Birth'/>
                 </Grid>
 
-                <Grid xs={5} borderRadius='5px' marginTop='20px'>
-                <Select label='Sub Catogary' value={value} onChange={handleChange} size='small' sx={{width:'100%',height:'80%'}}>
-                        {
-                            subcat.map((subcat) =>(
-                                <MenuItem value={subcat} key={subcat}>{subcat}</MenuItem>
-                            ))
-                        }
-                        
-                    </Select>
-                </Grid>
-
+                
                 <Grid xs={12} borderRadius='5px' marginTop='20px' sx={{backgroundColor:'#fff7ea'}}>
                     <Textarea paddingY='10px' paddingLeft='10px'  placeholder='Address'/>
                 </Grid>
 
                 <Grid xs={12} container direction='row' alignItems='center' justifyContent='center' paddingY='20px'>
-                    <Button variant='contained' sx={{backgroundColor:'#ff258d',color:'white'}}>Next</Button>
+                    <Button component={Link} to='/userdashboard' variant='contained'  sx={{backgroundColor:'#ff258d',color:'white',
+                '&:hover':{backgroundColor:'#ff258d',opacity:0.9}
+                }}>Next</Button>
                 </Grid>
 
             </Grid>
@@ -93,4 +85,4 @@ const AboutUs = () => {
   )
 }
 
-export default AboutUs
+export default AboutUsUser

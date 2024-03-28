@@ -9,7 +9,8 @@ const Footer = () => {
                 <Typography fontSize='30px' paddingBottom='20px'>NewsLetter</Typography>
                 <Grid>
                 <TextField variant='outlined'  placeholder='Email' size='small' borderRadius='5'  sx={{bgcolor:'#fff', color:'#000'}} />
-                <Button variant='outlined'  sx={{marginLeft:'15px',color:'#000',bgcolor:"#fff", border:"1px solid #fff",borderRadius:'5'}}>Subscibe</Button>
+                <Button variant='outlined'  sx={{marginLeft:'15px',color:'#000',bgcolor:"#fff", border:"1px solid #fff",borderRadius:'5',transition: 'transform 0.3s ease-in-out',
+                '&:hover':{scale:'1.1',color:'#000',bgcolor:'#fff'}}}>Subscibe</Button>
                 </Grid>
                 <Typography fontSize='20px' paddingTop='30px' fontWeight='200'>Sign up with your email address to receive news and updates</Typography>
 

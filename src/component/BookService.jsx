@@ -44,7 +44,10 @@ const BookService = () => {
                     Distribute final payments and gratuities to vendors as necessary 
                     </ListItem>
                 </List>
-                <Button varient='contained' component={Link} to='/signup' sx={{bgcolor:'#000',color:'#fff',width:'30%',paddingTop:'15px',paddingBottom:'15px'}}>Book Now</Button>
+                <Button varient='contained' component={Link} to='/signup' sx={{bgcolor:'#000',color:'#fff',
+                width:'30%',paddingTop:'15px',
+                transform:'transition 0.3s ease-in-out',
+                paddingBottom:'15px','&:hover':{bgcolor:'#000',color:'#fff',scale:'1.05'}}}>Book Now</Button>
             </Grid>
         </Grid>
     </Grid>

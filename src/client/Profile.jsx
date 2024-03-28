@@ -14,7 +14,10 @@ const Profile = () => {
                             <Typography fontSize='30px'>Chinmay Kulkarni</Typography>
                             <Typography fontSize='26px'> Photograpgy</Typography>
                             <Typography fontSize='30px'>*****</Typography>
-                            <Button component={Link} to='/photoinfo' variant='contained' sx={{width:'50%', borderLeft:'10px',color:'white',backgroundColor:'#ff258d'}}>Book</Button>
+                            <Button component={Link} to='/photoinfo' variant='contained' sx={{width:'50%', borderLeft:'10px',color:'white',backgroundColor:'#ff258d',
+                            transition:'transform 0.5s ease-in-out',
+                            '&:hover':{color:'white',backgroundColor:'#ff258d',scale:'1.1'}
+                            }}>Book</Button>
                         </Grid>
                     </Grid>
                 </Grid>

@@ -3,7 +3,7 @@ import React from 'react'
 import editpro from '../images/editpro.jpg'
 import portimages from '../images/portimages.jpg'
 
-const ServiceProviderEdit = () => {
+const ServiceProfile = () => {
   return (
     <Box height='100%' sx={{backgroundColor:'white'}}>
         <Grid container direction='column' justifyContent='center'>
@@ -67,4 +67,4 @@ const ServiceProviderEdit = () => {
   )
 }
 
-export default ServiceProviderEdit
+export default ServiceProfile

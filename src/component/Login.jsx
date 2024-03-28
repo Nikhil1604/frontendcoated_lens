@@ -17,7 +17,7 @@ const Login = () => {
     const handleVarify =() =>{
         console.log(otp)
         setOpen(false)
-        navigate('/aboutususer')
+        navigate('/aboutus')
     }
 
 
@@ -38,7 +38,11 @@ const Login = () => {
                 </Grid>
                 <Grid container direction='column' alignItems='center' justifyContent='center'>
                         
-                    <Button onClick={handleClickopen} variant='contained'  sx={{marginTop:'124px',width:'200px',height:'58px',bgcolor:'#ff258d', p:'10px',borderRadius:'25px'}}>Get Otp </Button>
+                    <Button onClick={handleClickopen} variant='contained'  sx={{marginTop:'124px',width:'200px',
+                    height:'58px',bgcolor:'#ff258d',
+                     p:'10px',borderRadius:'25px',
+                     '&:hover':{bgcolor:'#ff258d',opacity:0.9}
+                     }}>Get Otp </Button>
                     <Dialog open={open} onClose={handleClose}>
                     <DialogTitle>OTP Varification</DialogTitle>
                     <DialogContent>

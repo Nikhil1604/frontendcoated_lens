@@ -21,7 +21,10 @@ const Photographerinfo = () => {
                     <Grid xs={6} container direction='column' alignItems='flex-start' justifyContent='center'>
                         <Typography fontSize='18px'>Reqiurement: <Typography display='inline'>Photography</Typography></Typography>
                         <Typography fontSize='18px'>Loaction: <Typography display='inline'>Gujrat ,India</Typography></Typography>
-                        <Button variant='contained' paddingTop='10px' sx={{backgroundColor:'#ff258d',color:'white'}}>Send Enquiry</Button>
+                        <Button variant='contained' paddingTop='10px' sx={{backgroundColor:'#ff258d',color:'white',marginTop:'10px',
+                        transform:'transition 0.3s ease-in-out',
+                        '&:hover':{backgroundColor:'#ff258d',color:'white',scale:'1.1'}
+                        }}>Send Enquiry</Button>
                     </Grid>
                     <Grid xs={6} container direction='column' alignItems='flex-start' justifyContent='center'>
                         <Typography fontSize='18px'>Contact: <Typography display='inline'>+91 9988776655</Typography></Typography>

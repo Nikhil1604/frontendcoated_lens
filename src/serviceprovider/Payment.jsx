@@ -1,6 +1,7 @@
 import { CheckBox } from '@mui/icons-material'
 import { Box, Button, FormControlLabel, Grid, Typography } from '@mui/material'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Payment = () => {
   return (
@@ -49,7 +50,11 @@ const Payment = () => {
             </Grid>
 
             <Grid xs={8} container paddingTop='20px' paddingLeft='10px'>
-                <Button sx={{backgroundColor:'#ff258d',color:'white', paddingX:'50px',paddingY:'10px',borderRadius:'25px',fontSize:'20px'}}>Next</Button>
+            <Button component={Link} to='/servicedash' variant='contained' sx=             {{backgroundColor:'#ff258d',color:'white',borderRadius:'25px',
+            paddingX:'50px',paddingY:'5px',fontSize:'20px',
+            marginTop:'15px',
+            '&:hover':{backgroundColor:'#ff258d',color:'white',scale:'1.05'}
+            }} size='large'>Next</Button>
             </Grid>
 
         </Grid>

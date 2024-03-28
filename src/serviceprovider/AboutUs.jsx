@@ -1,16 +1,17 @@
-import { Textarea } from '@mui/joy'
 import { Box, Button, Grid, MenuItem, Select, Typography } from '@mui/material'
 import React from 'react'
 import uplo from '../images/upload.jpg'
+import {Textarea } from '@mui/joy'
 import { Link } from 'react-router-dom'
 
 const gender =['Male','Female','Other']
 
 const services=['Photography','VideoGraphy','Designing','Editing',]
 
+const subcat=['option1','option2','option3']
 
 
-const AboutUsUser = () => {
+const AboutUs = () => {
     const [value,setValue]=React.useState('');
 
     const handleChange = (e) =>{
@@ -67,13 +68,27 @@ const AboutUsUser = () => {
                     <Textarea paddingY='10px' paddingLeft='10px'  placeholder='Date Of Birth'/>
                 </Grid>
 
-                
+                <Grid xs={5} borderRadius='5px' marginTop='20px'>
+                <Select label='Sub Catogary' value={value} onChange={handleChange} size='small' sx={{width:'100%',height:'80%'}}>
+                        {
+                            subcat.map((subcat) =>(
+                                <MenuItem value={subcat} key={subcat}>{subcat}</MenuItem>
+                            ))
+                        }
+                        
+                    </Select>
+                </Grid>
+
                 <Grid xs={12} borderRadius='5px' marginTop='20px' sx={{backgroundColor:'#fff7ea'}}>
                     <Textarea paddingY='10px' paddingLeft='10px'  placeholder='Address'/>
                 </Grid>
 
                 <Grid xs={12} container direction='row' alignItems='center' justifyContent='center' paddingY='20px'>
-                    <Button component={Link} to='/userdashboard' variant='contained'  sx={{backgroundColor:'#ff258d',color:'white'}}>Next</Button>
+                    <Button component={Link} to='/payment' variant='contained' sx={{backgroundColor:'#ff258d',color:'white',borderRadius:'25px',
+                        paddingX:'50px',paddingY:'5px',fontSize:'20px',
+                        marginTop:'15px',
+                        '&:hover':{backgroundColor:'#ff258d',color:'white',scale:'1.05'}
+                    }} size='large'>Next</Button>
                 </Grid>
 
             </Grid>
@@ -83,4 +98,4 @@ const AboutUsUser = () => {
   )
 }
 
-export default AboutUsUser
+export default AboutUs
