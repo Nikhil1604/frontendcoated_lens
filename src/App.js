@@ -10,11 +10,11 @@ import EarnWithUs from './component/EarnWithUs';
 import About from './component/About';
 import BookService from './component/BookService';
 import Contact from './component/Contact';
-import SideBar from './sidebar/SideBar';
+// import SideBar from './sidebar/SideBar';
 import Login from './component/Login';
 import SignUp from './component/SignUp';
 import Oldlead from './serviceprovider/OldLead'
-// import ServiceSideBar from './sidebar/ServiceSideBar';
+import ServiceSideBar from './sidebar/ServiceSideBar';
 import Terms from './serviceprovider/Terms'
 import Privacy from './serviceprovider/Privacy';
 import Earning from './serviceprovider/Earning';
@@ -27,14 +27,15 @@ import NewLead from './serviceprovider/NewLead';
 import AboutUs from './serviceprovider/AboutUs';
 import AboutUsUser from './client/AboutUsUser';
 import ClientDashBoard from './client/ClientDashBoard';
+import ClientInfo from './serviceprovider/ClientInfo';
 
 function App() {
   return (
     <Box sx={{bgcolor:'#fff7ea'}}>
       <Grid xs={12} container direction='row' sx={{bgcolor:'#fff7ea'}}>
         <Grid xs={4}>
-            <SideBar />
-            {/* <ServiceSideBar/> */}
+            {/* <SideBar /> */}
+            <ServiceSideBar/>
         </Grid>
         <Grid xs={8}>
           <Routes>
@@ -61,6 +62,7 @@ function App() {
             <Route path='/address' element={<ServiceAddress/>}></Route>
             <Route path='/profile' element={<ServiceProfile/>}></Route>
             <Route path='/portfolio' element={<Portfolio/>}></Route>
+            <Route path='/clientinfo' element={<ClientInfo/>}></Route>
 
           </Routes>
           </Grid>

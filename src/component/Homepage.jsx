@@ -36,35 +36,19 @@ const Homepage = () => {
                 <Grid container direction='row' justifyContent='space-around' alignItems='center' paddingTop='74px'>
                         <Grid xs={3} container direction='column' justifyContent='center' alignItems='center'>
                             <img src={photo} alt='photo1'/>
-                            <Button component={Link} to='/bookaservice' variant='text' sx={{fontSize:'22px',color:'black',
-                            padding:'10px',marginTop:'10px',
-                            transform:'transition 0.3s ease-in-out',
-                            '&:hover':{scale:'1.1'}   
-                            }}>PhotoGraphy</Button>
+                            <Button component={Link} to='/bookaservice' variant='text' sx={{ fontSize: '24px', color: '#000',padding:'10px',marginTop:'10px',boxShadow:'none',transition: 'transform 0.3s ease-in-out','&:hover':{scale:'1.1',boxShadow:'none' }}}>PhotoGraphy</Button>
                         </Grid>
                         <Grid xs={3} container direction='column' justifyContent='center' alignItems='center'>
                             <img src={video} alt='video'/>
-                            <Button component={Link} to='/bookaservice' variant='text' sx={{fontSize:'22px',color:'black',
-                            padding:'10px',marginTop:'10px',
-                            transform:'transition 0.3s ease-in-out',
-                            '&:hover':{scale:'1.1'}   
-                            }}>VideoGraphy</Button>
+                            <Button component={Link} to='/bookaservice' variant='text' sx={{ fontSize: '24px', color: '#000',padding:'10px',marginTop:'10px',boxShadow:'none',transition: 'transform 0.3s ease-in-out','&:hover':{scale:'1.1',boxShadow:'none' }}}>VideoGraphy</Button>
                         </Grid>
                         <Grid xs={3} container direction='column' justifyContent='center' alignItems='center'>
                             <img src={design} alt='design'/>
-                            <Button component={Link} to='/bookaservice' variant='text' sx={{fontSize:'22px',color:'black',
-                            padding:'10px',marginTop:'10px',
-                            transform:'transition 0.3s ease-in-out',
-                            '&:hover':{scale:'1.1'}   
-                            }}>Designing</Button>
+                            <Button component={Link} to='/bookaservice' variant='text' sx={{ fontSize: '24px', color: '#000',padding:'10px',marginTop:'10px',boxShadow:'none',transition: 'transform 0.3s ease-in-out','&:hover':{scale:'1.1',boxShadow:'none' }}}>Designing</Button>
                         </Grid>
                         <Grid xs={3} container direction='column' justifyContent='center' alignItems='center'>
                             <img src={edit} alt='edit'/>
-                            <Button component={Link} to='/bookaservice' variant='text' sx={{fontSize:'22px',color:'black',
-                            padding:'10px',marginTop:'10px',
-                            transform:'transition 0.3s ease-in-out',
-                            '&:hover':{scale:'1.1'}   
-                            }}>Editing</Button>
+                            <Button component={Link} to='/bookaservice' variant='text' sx={{ fontSize: '24px', color: 'black',padding:'10px',marginTop:'10px',boxShadow:'none',transition: 'transform 0.3s ease-in-out','&:hover':{scale:'1.1',boxShadow:'none' }}}>Editing</Button>
                         </Grid>
                 </Grid>
 
